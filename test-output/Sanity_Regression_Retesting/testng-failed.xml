@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity_Regression_Retesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sanity_Regression_Retesting(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Retesting"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.InventoryPageTest">
+        <methods>
+          <include name="verifyTwitterLogoTest"/>
+          <include name="verifyProductLabelTest"/>
+        </methods>
+      </class> <!-- testCases.InventoryPageTest -->
+      <class name="testCases.LoginPageTest">
+        <methods>
+          <include name="verifyURLOfApplicationTest"/>
+          <include name="verifyTitleOfApplicationTest"/>
+        </methods>
+      </class> <!-- testCases.LoginPageTest -->
+      <class name="testCases.CartPageTest">
+        <methods>
+          <include name="verifyCartPageUrlTest"/>
+          <include name="VerifyCartPageLableTest"/>
+          <include name="clickOncheckOutBtnTest"/>
+        </methods>
+      </class> <!-- testCases.CartPageTest -->
+    </classes>
+  </test> <!-- Sanity_Regression_Retesting(failed) -->
+</suite> <!-- Failed suite [Sanity_Regression_Retesting] -->
